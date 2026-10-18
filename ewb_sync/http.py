@@ -4,6 +4,8 @@ Keeping raw HTTP here means auth.py and client.py read like plain logic,
 and swapping in a library such as `requests` later only touches this file.
 """
 
+from __future__ import annotations
+
 import json
 import urllib.error
 import urllib.parse

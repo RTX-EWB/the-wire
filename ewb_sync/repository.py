@@ -5,6 +5,8 @@ opportunities in plain terms ("get this one", "list recent ones") and gets
 VolunteerOpportunity objects back.
 """
 
+from __future__ import annotations
+
 import re
 
 from ewb_sync.client import SalesforceClient

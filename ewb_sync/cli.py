@@ -8,6 +8,8 @@ Usage:
     python -m ewb_sync list [--limit N]     # Id + name of recent opportunities
 """
 
+from __future__ import annotations
+
 import argparse
 import sys
 
