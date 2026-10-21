@@ -58,20 +58,6 @@ SF_CLIENT_SECRET=<Consumer Secret>
 
 `.env` is in `.gitignore`. **Never commit it, paste it in chat, or put secrets in code.**
 
-Load it into your terminal session (do this in every new terminal):
-
-**macOS / Linux**
-```bash
-set -a; source .env; set +a
-```
-
-**Windows (PowerShell)**
-```powershell
-Get-Content .env | Where-Object { $_ -match '^\s*[^#].*=' } | ForEach-Object {
-    $name, $value = $_ -split '=', 2
-    Set-Item "env:$($name.Trim())" $value.Trim()
-}
-```
 
 ## 5. Check that everything works
 
